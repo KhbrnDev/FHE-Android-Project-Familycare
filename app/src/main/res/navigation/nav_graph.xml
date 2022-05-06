@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/miAllFamilyMembers">
+
+    <fragment
+        android:id="@+id/miAllContacts"
+        android:name="de.fhe.familycare.view.contact.allContacts.AllContactsFragment"
+        android:label="@string/miAllContacts_title"
+        tools:layout="@layout/fragment_all_contacts" >
+        <action
+            android:id="@+id/action_miAllContacts_to_addContactFragment"
+            app:destination="@id/addContactFragment" />
+        <action
+            android:id="@+id/action_miAllContacts_to_showContact"
+            app:destination="@id/showContact" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addContactFragment"
+        android:name="de.fhe.familycare.view.contact.addContact.AddContactFragment"
+        android:label="@string/addContactFragment_title"
+        tools:layout="@layout/fragment_edit_contact" />
+
+    <fragment
+        android:id="@+id/showContact"
+        android:name="de.fhe.familycare.view.contact.contact.ContactFragment"
+        android:label="@string/showContact_title"
+        tools:layout="@layout/fragment_contact" >
+        <action
+            android:id="@+id/action_showContact_to_editContact"
+            app:destination="@id/editContact" />
+        <argument
+            android:name="contactID"
+            app:argType="long"
+            android:defaultValue="-1L"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editContact"
+        android:name="de.fhe.familycare.view.contact.editContact.EditContactFragment"
+        android:label="@string/editContact_title"
+        tools:layout="@layout/fragment_add_contact" >
+        <argument
+            android:name="contactID"
+            app:argType="long"
+            android:defaultValue="-1L"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/miAllAppointments"
+        android:name="de.fhe.familycare.view.appointments.allAppointments.AllAppointmentsFragment"
+        android:label="@string/miAllAppointments_title"
+        tools:layout="@layout/fragment_all_appointments" >
+        <action
+            android:id="@+id/action_miAllAppointments_to_addAppointmentFragment"
+            app:destination="@id/addAppointmentFragment" />
+        <action
+            android:id="@+id/action_miAllAppointments_to_showAppointment"
+            app:destination="@id/showAppointment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addAppointmentFragment"
+        android:name="de.fhe.familycare.view.appointments.addAppointment.AddAppointmentFragment"
+        android:label="@string/addAppointmentFragment_title"
+        tools:layout="@layout/fragment_add_appointment" >
+        <argument
+            android:name="familyMemberID"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/showAppointment"
+        android:name="de.fhe.familycare.view.appointments.appointment.AppointmentFragment"
+        android:label="@string/showAppointment_title"
+        tools:layout="@layout/fragment_appointment" >
+        <action
+            android:id="@+id/action_showAppointment_to_editAppointment"
+            app:destination="@id/editAppointment" />
+        <argument
+            android:name="appointmentID"
+            app:argType="long"
+            android:defaultValue="-1L"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editAppointment"
+        android:name="de.fhe.familycare.view.appointments.editAppointment.EditAppointmentFragment"
+        android:label="@string/editAppointment_title"
+        tools:layout="@layout/fragment_edit_appointment" >
+        <argument
+            android:name="appointmentID"
+            app:argType="long"
+            android:defaultValue="-1L"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/showFamilyMember"
+        android:name="de.fhe.familycare.view.familymember.familyMemberViewPager.FamilyMemberFragment"
+        android:label="@string/showFamilyMember_title"
+        tools:layout="@layout/fragment_family_member" >
+        <argument
+            android:name="familyMemberID"
+            app:argType="long"
+            android:defaultValue="-1L"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/miAllFamilyMembers"
+        android:name="de.fhe.familycare.view.familymember.allfamilymembers.AllFamilyMembersFragment"
+        android:label="@string/miAllFamilyMembers_title"
+        tools:layout="@layout/fragment_all_family_members" >
+        <action
+            android:id="@+id/action_miAllFamilyMembers_to_addFamilyMemberFragment"
+            app:destination="@id/addFamilyMemberFragment" />
+        <action
+            android:id="@+id/action_miAllFamilyMembers_to_familyMemberViewPagerFragment"
+            app:destination="@id/familyMemberViewPagerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addFamilyMemberFragment"
+        android:name="de.fhe.familycare.view.familymember.addFamilyMember.AddFamilyMemberFragment"
+        android:label="@string/addFamilyMemberFragment_title"
+        tools:layout="@layout/fragment_add_family_member" />
+
+    <fragment
+        android:id="@+id/editFamilyMemberFragment"
+        android:name="de.fhe.familycare.view.familymember.editFamilyMember.EditFamilyMemberFragment"
+        android:label="@string/editFamilyMemberFragment_title"
+        tools:layout="@layout/fragment_edit_family_member" >
+        <argument
+            android:name="familyMemberID"
+            app:argType="long"
+            android:defaultValue="-1L"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/familyMemberViewPagerFragment"
+        android:name="de.fhe.familycare.view.familymember.familyMemberViewPager.FamilyMemberViewPagerFragment"
+        android:label="@string/familyMemberViewPagerFragment_title"
+        tools:layout="@layout/fragment_family_member_view_pager" >
+        <argument
+            android:name="familyMemberID"
+            app:argType="long"
+            android:defaultValue="-1L" />
+        <action
+            android:id="@+id/action_familyMemberAppointments_to_addAppointmentFragment"
+            app:destination="@id/addAppointmentFragment" />
+        <action
+            android:id="@+id/action_familyMemberAppointments_to_showAppointment"
+            app:destination="@id/showAppointment" />
+        <action
+            android:id="@+id/action_showFamilyMember_to_editFamilyMemberFragment"
+            app:destination="@id/editFamilyMemberFragment" />
+    </fragment>
+
+</navigation>

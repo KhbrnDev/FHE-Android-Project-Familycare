@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">FamilyCare</string>
+
+    <!--    Bottom Nav Menu-->
+    <string name="contacts">Kontakte</string>
+    <string name="family">Familie</string>
+    <string name="appointments">Termine</string>
+
+    <!--    Layout Appbar Titles-->
+    <string name="miAllContacts_title">Kontaktverwaltung</string>
+    <string name="addContactFragment_title">Neuen Kontakt hinzufügen</string>
+    <string name="showContact_title">Kontakt</string>
+    <string name="editContact_title">Kontakt bearbeiten</string>
+    <string name="miAllAppointments_title">Terminverwaltung</string>
+    <string name="addAppointmentFragment_title">Neuen Termin hinzufügen</string>
+    <string name="showAppointment_title">Termin</string>
+    <string name="editAppointment_title">Termin bearbeiten</string>
+    <string name="showFamilyMember_title">Familienmitglied</string>
+    <string name="miAllFamilyMembers_title">Alle Familienmitglieder</string>
+    <string name="addFamilyMemberFragment_title">Familienmitglied hinzufügen</string>
+    <string name="editFamilyMemberFragment_title">Familienmitglied editieren</string>
+    <string name="familyMemberViewPagerFragment_title">Familienmitglied</string>
+
+
+    <!--    Multi Use Strings-->
+    <string name="note">Notiz</string>
+    <string name="save">Speichern</string>
+    <string name="familymember">Familienmitglied</string>
+
+    <!--    Wight Data Options Menu-->
+    <string name="daily">täglich</string>
+    <string name="weekly">wöchentlich</string>
+    <string name="monthly">monatlich</string>
+    <string name="yearly">jährlich</string>
+
+    <!--    other option menus-->
+    <string name="edit">Editieren</string>
+    <string name="delete">Löschen</string>
+
+    <!-- Weight Data Graph -->
+    <string name="no_data">Keine Gewichtsdaten für diesen Zeitraum</string>
+    <string name="add_recent_weight">Neues Gewicht hinzufügen</string>
+    <string name="bmi_formatted">"aktueller BMI: %1$s\n%2$s hat %3$s"</string>
+
+    <!-- BMI -->
+    <string name="underweight">Untergewicht</string>
+    <string name="normal_weight">Normalgewicht</string>
+    <string name="a_little_too_much">Präadipositas</string>
+    <string name="obesity">moderate Adipositas</string>
+    <string name="more_obesity">starke Adipositas</string>
+    <string name="extreme_obesity">extreme Adipositas</string>
+    <string name="no_bmi_under_18">Die Berechnung des BMIs erfolgt nur bei Familienmitgliedern ab 18 Jahre.</string>
+
+    <!-- Weight Data Input Dialog -->
+    <string name="title_weight_input">Neues Gewicht für %1$s eingeben</string>
+    <string name="warning_weight_exists">Ein Gewicht für Heute wurde bereits gespeichert, das erneute Speichern überschreibt das alte Gewicht!</string>
+    <string name="new_date_for_today">Ein Gewicht für heute speichern</string>
+    <string name="warning_weight_not_saved">Kein Gewicht für heute gespeichert"</string>
+
+    <!-- Strings for input validation -->
+    <string name="name_not_blank">Das Feld Name darf nicht leer sein.</string>
+    <string name="title_not_blank">Das Feld Titel darf nicht leer sein.</string>
+    <string name="no_email_address">Bitte gib eine gültige E-Mail-Adresse an.</string>
+    <string name="no_phone_number">Bitte gib eine gültige Telefonnummer an.</string>
+    <string name="phone_number_too_long">Die angegebene Telefonnummer ist zu lang.</string>
+    <string name="type_not_blank">Es muss ein Typ gewählt werden.</string>
+    <string name="new_type_not_blank">Das Feld "Neuer Typ" darf nicht leer sein.</string>
+    <string name="new_type_too_long">Der angegebene Typ ist zu lang.</string>
+    <string name="note_too_long">Notiz zu lang</string>
+
+    <!-- Height input-->
+    <string name="title_height_input">Bitte Größe in cm eingeben:</string>
+
+
+    <!-- Profile Picture input -->
+    <string name="title_profile_picture_input">Profilbild aufnehmen</string>
+    <string name="button_gallery">Galerie</string>
+    <string name="button_camera">Kamera</string>
+    <string name="file_not_created">Es konnte keine Datei für das Bild angelegt werden.</string>
+    <string name="file_deleted">Bild gelöscht</string>
+    <string name="no_file_deleted">Kein Bild wurde gelöscht</string>
+    <string name="title_profile_picture_edit">Profilbild bearbeiten</string>
+    <string name="warning_deletion">Achtung: wenn ein neues Bild aufgenommen wird, wird das alte gelöscht</string>
+    <string name="button_delete_picture">Bild löschen</string>
+    <string name="button_new_picture">Neues Bild</string>
+
+    <!-- Text for buttons -->
+    <string name="ok">OK</string>
+    <string name="cancel">Abbrechen</string>
+
+    <!-- Empty FamilyMember Dropdown-->
+    <string name="no_family_member">Kein Familienmitglied</string>
+
+    <!-- AddFamilyMemberType Dropdown -->
+    <string name="add_type">Neuen Typ erstellen</string>
+
+    <!-- General error notification -->
+    <string name="general_error">Etwas ist schief gegangen.</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_new_type">Neuen Type erstellen</string>
+
+    <!--    Appointments-->
+    <string name="appointment_clock">%1$s Uhr</string>
+    <string name="appointment_clock_rvitem">%1$s\n%2$s Uhr </string>
+    <string name="titel">Titel</string>
+    <string name="chose_date_time">Datum und Zeit wählen</string>
+    <string name="add_appointment">Termin hinzufügen</string>
+    <string name="also_show_past_appointments">Auch vergangene Termine anzeigen:</string>
+    <string name="all_appointments">Alle Termine</string>
+    <string name="edit_appointment">Termin bearbeiten</string>
+    <string name="delete_appointment">Termin löschen?</string>
+    <string name="appointment_deletion_confirmation">"Beim Bestätigen wird der Termin unwiederruflich gelöscht"</string>
+    <string name="note_with_text">Notiz: %1$s</string>
+    <string name="appointment_with_familymember">mit %1$s</string>
+    <string name="appointment_date_time_formatted">%1$s.%2$s.%3$s %4$s:%5$s</string>
+
+
+    <!--    Contact-->
+    <string name="name">Name</string>
+    <string name="telefone">Telefon</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="new_contact">Neuer Kontakt</string>
+    <string name="all_contact">Alle Kontakte</string>
+    <string name="edit_contact">Kontakt bearbeiten</string>
+    <string name="delete_contact">Kontakt löschen?</string>
+    <string name="contact_deletion_confirmation">Beim Bestätigen wird der Kontakt unwiederruflich gelöscht</string>
+    <string name="email_with_text">"Email: %1$s"</string>
+    <string name="phone_with_text">"Telefon: %1$s"</string>
+
+
+    <!--    FamilyMember-->
+    <string name="birthday">Geburtstag</string>
+    <string name="birthday_with_text">Geburtstag: %1$s</string>
+    <string name="female">Weiblich</string>
+    <string name="male">Männlich</string>
+    <string name="non_binary">Nicht binär</string>
+    <string name="is_castrated">Ist Kastriert</string>
+    <string name="is_not_castrated">Ist nicht Kastriert</string>
+    <string name="is_a_human">Ist ein Mensch</string>
+    <string name="is_a_pet">Ist ein Haustier</string>
+    <string name="height">Größe: %1$s cm</string>
+    <string name="get_height">Größe erfassen</string>
+    <string name="familymember_type">FamilyMemberType</string>
+    <string name="new_type">Neuer Typ</string>
+    <string name="also_show_archived_familymembers">Auch archivierte Miglieder anzeigen:</string>
+    <string name="add_familymember">Familienmitglied hinzufügen</string>
+    <string name="change_birthday">Geburtsdatum ändern</string>
+    <string name="weight_graph">GewichtsGraph</string>
+    <string name="profileimage_of_familymember">Profilbild eines Familienmitglieds</string>
+    <string name="current_height">Aktuelle Größe: %1$scm</string>
+    <string name="birthday_formatted">%1$s.%2$s.%3$s</string>
+    <string name="no_image_deleted">Kein Bild wurde gelöscht</string>
+    <string name="edit_profileimage">Profilbild bearbeiten</string>
+    <string name="alert_new_image_deletes_old_image">Achtung: wenn ein neues Bild aufgenommen wird, wird das alte gelöscht</string>
+    <string name="delete_image">Bild löschen</string>
+    <string name="new_image">Neues Bild</string>
+    <string name="take_profileimage">Profilbild aufnehmen</string>
+    <string name="gallery">Gallerie</string>
+    <string name="error_image_could_not_be_taken">Bild konnte nicht aufgenommen werden</string>
+    <string name="camera">Kamera</string>
+    <string name="is_active_familymember">aktives Familienmitglied</string>
+    <string name="is_not_active">archiviertes Familienmitglied</string>
+    <string name="is_active">Ist aktives Familienmitglied</string>
+
+    <!-- view pager -->
+    <string name="tab_profile_title">Profil</string>
+    <string name="tab_weight_title">Gewicht</string>
+    <string name="tab_appointment_title">Termine</string>
+    <string name="call_contact">Kontakt anrufen</string>
+    <string name="email_contact">Email Kontakt</string>
+
+
+</resources>

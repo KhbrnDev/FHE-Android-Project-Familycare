@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_weightdata_daily"
+        android:title="@string/daily"/>
+    <item
+        android:id="@+id/action_weightdata_weekly"
+        android:title="@string/weekly"/>
+    <item
+        android:id="@+id/action_weightdata_monthly"
+        android:title="@string/monthly"/>
+    <item
+        android:id="@+id/action_weightdata_yearly"
+        android:title="@string/yearly"/>
+</menu>

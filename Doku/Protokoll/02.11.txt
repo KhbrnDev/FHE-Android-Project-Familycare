@@ -1,0 +1,22 @@
+Protokoll 02.11.
+
+UI:
+- Filtern von Familienmitgliedern in der Übersicht nach Typ.
+- Bottom Nav Menu:
+	- Dashboard, Kalender, MyFamily, eigenes Profil
+	- Kombination mit Dashboard Fragment aus anderem Branch -> wird gemerched.
+- Kalenderübersicht:
+	- Strukturieren nach Zeiträumen
+	- Filtermöglichkeiten
+- Familienübersicht
+	- Liste oder "Raster" bzw. zwei Nebeneinander -> als Option wählbar
+- Eigenes Profil: Wie Familienmitglied, nur für sich selbst
+
+offene Fragen:
+- wie Fragment Container View in ein Coordinator Layout packen? -> Dozenten fragen
+- Wie blendet man Floating Action Button aus bei manchen Aktivitäten wenn man die Fragmente Wechselt
+
+Bis nächstes Meeting:
+- Videos bis: 4
+
+
